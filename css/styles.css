@@ -1,5 +1,28 @@
 body {
     font-family: "Montserrat", sans-serif;
+    background-color: #FAFAFA;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
 }
 
 .list {
@@ -22,6 +45,15 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1166px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
 }
 
 .section-title {
@@ -48,7 +80,10 @@ body {
     color: #111111;
 }
 
-.header {}
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .header-navigation {}
 
@@ -83,7 +118,13 @@ body {
 /**================ HERO =================  */
 
 .hero {
+    padding-bottom: 80px;
+}
+
+.hero-container {
     background: rgba(17, 17, 17, 0.6);
+    padding: 380px 40px 40px 40px;
+    border-radius: 30px;
 }
 
 .hero-title {
@@ -92,6 +133,8 @@ body {
     line-height: 1.21;
     letter-spacing: -0.03em;
     color: #FFFFFF;
+    margin-bottom: 32px;
+    max-width: 484px;
 }
 
 .hero-bye-btn {
@@ -133,6 +176,9 @@ body {
 
 .features {
     background-color: #1E1823;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
 }
 
 .features-list {}
@@ -144,6 +190,7 @@ body {
     font-size: 18px;
     letter-spacing: 0.01em;
     color: #FFFFFF;
+    margin-bottom: 18px;
 }
 
 .features-text {
@@ -156,20 +203,25 @@ body {
 /**=======================================  */
 /**================ TASTE =================  */
 
-.taste {}
+.taste {
+    padding-top: 120px;
+}
 
-.taste-title {}
+.taste-title {
+    margin-bottom: 50px;
+}
 
 .taste-list {}
 
 .taste-item {}
 
-.taste-img {}
+.taste-img {
+    margin-bottom: 36px;
+}
 
 .taste-subtitle {
     font-weight: 600;
-    font-size: 14px;
-    line-height: 1.29%;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     color: #111111;
 }
@@ -177,9 +229,13 @@ body {
 /**=======================================  */
 /**================ MADE =================  */
 
-.made {}
+.made {
+    padding-top: 120px;
+}
 
-.made-title {}
+.made-title {
+    margin-bottom: 50px;
+}
 
 .made-img {}
 
@@ -188,11 +244,18 @@ body {
     font-size: 18px;
     line-height: 1.33;
     color: #111111;
+    margin-bottom: 28px;
 }
 
 .made-list {}
 
-.made-item {}
+.made-item {
+    margin-bottom: 24px;
+}
+
+.made-item:last-child {
+    margin-bottom: 0;
+}
 
 .made-item-text {
     font-size: 14px;
@@ -204,15 +267,27 @@ body {
 /**=======================================  */
 /**================ PRODUCTS =================  */
 
-.products {}
+.products {
+    padding-top: 120px;
+}
 
-.products-title {}
+.products-title {
+    margin-bottom: 50px;
+}
 
 .products-list {}
 
-.products-item {}
+.products-item {
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    padding: 32px 20px;
+    text-align: center;
+}
 
-.products-img {}
+.products-img {
+    margin-bottom: 8px;
+}
 
 .products-subtitle {
     font-weight: 600;
@@ -221,6 +296,7 @@ body {
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #111111;
+    margin-bottom: 2px;
 }
 
 .products-item-text {
@@ -228,6 +304,7 @@ body {
     line-height: 1.17;
     letter-spacing: -0.02em;
     color: rgba(17, 17, 17, 0.7);
+    margin-bottom: 18px;
 }
 
 .products-item-price {
@@ -239,9 +316,13 @@ body {
 /**=======================================  */
 /**================ SELLERS =================  */
 
-.sellers {}
+.sellers {
+    padding-top: 120px;
+}
 
-.sellers-title {}
+.sellers-title {
+    margin-bottom: 50px;
+}
 
 .sellers-list {}
 
@@ -256,18 +337,37 @@ body {
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #111111;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
 }
 
 /**=======================================  */
 /**================ LOVED =================  */
 
-.loved {}
+.loved {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
-.loved-title {}
+.loved-title {
+    margin-bottom: 50px;
+}
 
-.loved-list {}
+.loved-list {
+    margin-bottom: 50px;
+}
 
-.loved-item {}
+.loved-item {
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+    background-color: #FFFFFF;
+    padding: 56px 24px 24px 24px;
+}
 
 .loved-img {}
 
@@ -277,6 +377,7 @@ body {
     line-height: 1.33;
     text-align: center;
     color: #111111;
+    margin-bottom: 24px;
 }
 
 .loved-item-text {
@@ -294,6 +395,8 @@ body {
     font-size: 18px;
     color: #111111;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
 }
 
 .loved-btn:hover,
@@ -307,13 +410,17 @@ body {
 
 .footer {
     background-color: #1E1823;
+    padding-top: 50px;
+    padding-bottom: 86px;
 }
+
 .footer-text {
-font-weight: 500;
-font-size: 28px;
-line-height: 1.21;
-letter-spacing: -0.02em;
-color: #FFFFFF;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    max-width: 300px;
 }
 
 .footer-text span {
@@ -321,46 +428,54 @@ color: #FFFFFF;
 }
 
 .footer-subtitle {
-font-weight: 500;
-font-size: 14px;
-line-height: 129%;
-text-align: center;
-color: #FFFFFF;
-}
-.footer-soc-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 18px;
 }
 
-.footer-soc-item {
-}
-.footer-soc-link {
-}
+.footer-soc-list {}
+
+.footer-soc-item {}
+
+.footer-soc-link {}
 
 .footer-address {
     font-style: normal;
 }
-.footer-address-list {
-}
-.footer-address-item {
-}
+
+.footer-address-list {}
+
+.footer-address-item {}
+
 .footer-address-link {
-font-size: 14px;
-line-height: 1.29;
-letter-spacing: -0.02em;
-text-align: center;
-color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #FFFFFF;
 }
-.footer-navigation {
+
+.footer-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 50px;
+    margin-bottom: 24px;
 }
-.footer-menu-list {
-}
-.footer-menu-item {
-}
+
+.footer-navigation {}
+
+.footer-menu-list {}
+
+.footer-menu-item {}
+
 .footer-menu-link {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: -0.02em;
-color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
 }
 
 .footer-menu-link:is(:hover, :focus) {
