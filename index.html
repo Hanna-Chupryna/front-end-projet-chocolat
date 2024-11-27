@@ -263,7 +263,9 @@
                             <img class="sellers-img" src="./images/sellers-img-1.jpg" alt="Chocolate with nuts"
                                 width="368" height="464">
                             <div class="sellers-text-wrap">
-                                <p class="sellers-cover-text">Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.</p>
+                                <p class="sellers-cover-text">Chocolate with fruit is an unbeatable combination of two
+                                    of the tastiest things in the world. This dessert combines delicate and aromatic
+                                    chocolate with fresh and juicy fruits, creating a true poetry of taste.</p>
                             </div>
                         </div>
 
@@ -353,6 +355,76 @@
             </nav>
         </div>
     </footer>
+    <div class="backdrop">
+        <div class="modal">
+            <button class="modal-btn" type="button">
+                <svg class="modal-btn-icon" width="28" height="28">
+                    <use href="./images/icons.svg#icon-x-close-1"></use>
+                </svg>
+            </button>
+            <p class="modal-title section-title">Leave a review about <span>our chocolate</span></p>
+            <form class="modal-form">
+                <div class="modal-field">
+                    <label for="user-name" class="modal-label">Name</label>
+                    <div class="input-wrap">
+                        <input
+                            type="text"
+                            name="user-name"
+                            class="modal-input"
+                            placeholder="Enter name"
+                            required
+                            minlength="2"
+                            id="user-name">
+                            <svg class="modal-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-user"></use>
+                            </svg>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="user-email" class="modal-label">Email</label>
+                    <div class="input-wrap">
+                        <input
+                            type="email"
+                            name="user-email"
+                            class="modal-input"
+                            placeholder="Enter email"
+                            required
+                            id="user-email">
+                            <svg class="modal-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-mail"></use>
+                            </svg>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="user-phone" class="modal-label">Phone number</label>
+                    <div class="input-wrap">
+                        <input
+                            type="tel"
+                            name="user-phone"
+                            class="modal-input"
+                            placeholder="Enter phone number"
+                            required
+                            id="user-phone">
+                            <svg class="modal-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-Vector"></use>
+                            </svg>
+                    </div>
+                </div>
+
+                <div class="modal-field">
+                    <label for="user-text" class="modal-label">Comment</label>
+                    <textarea 
+                    name="user-text"
+                    id="user-text"
+                    class="modal-textarea"
+                    placeholder="Enter text"></textarea>
+                </div>
+
+                <button type="submit" class="modal-form-btn">Send</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 
 </html>
