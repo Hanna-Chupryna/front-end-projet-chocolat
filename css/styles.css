@@ -53,7 +53,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 .section-title {
@@ -419,6 +419,21 @@ img {
 
 .made-item {
     margin-bottom: 24px;
+    margin-left: 16px;
+    position: relative;
+}
+
+.made-item::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: -15px;
+    width: 8px;
+    height: 8px;
+    background-color: #4C4C4C;
+    border-radius: 50%;
+    border: 1px solid #e2e2e2;
+
 }
 
 .made-item:last-child {
@@ -564,7 +579,7 @@ img {
 }
 
 .loved-title {
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 
 .loved-list {
@@ -580,9 +595,16 @@ img {
     background-color: #FFFFFF;
     padding: 56px 24px 24px 24px;
     width: calc((100% - 28px * 2) / 3);
+    position: relative;
+
 }
 
-.loved-img {}
+.loved-img {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%);
+}
 
 .loved-subtitle {
     font-weight: 600;
@@ -662,11 +684,46 @@ img {
     margin-bottom: 18px;
 }
 
-.footer-soc-list {}
+/* ========================= */
+.footer-soc-list {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
 
-.footer-soc-item {}
+.footer-soc-item {
+    width: 40px;
+    height: 40px;
+}
 
-.footer-soc-link {}
+.footer-soc-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border 300ms linear;
+}
+
+
+.footer-soc-icon {
+    fill: #FFFFFF;
+    transition: fill 300ms linear;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    border: 1px solid rgba(253, 147, 34, 0.3);
+}
+
+.footer-soc-link:hover .footer-soc-icon,
+.footer-soc-link:focus .footer-soc-icon {
+    fill: #FD9222;
+}
+
+/* ========================== */
 
 .footer-address {
     font-style: normal;
@@ -705,11 +762,67 @@ img {
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+    transition: color 300ms linear;
 }
 
 .footer-menu-link:is(:hover, :focus) {
     color: #FD9222;
 }
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-form {
+    display: flex;
+    gap: 8px;
+}
+
+.footer-form-input {
+    width: 313px;
+    height: 52px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: transparent;
+    outline: transparent;
+    padding: 0 24px;
+    color: #FAFAFA;
+    transition: border-color 300ms linear;
+}
+
+.footer-form:focus-within .footer-form-input {
+    border-color: #FD9222;
+}
+
+.footer-form-input::placeholder {
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-form-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+
+    border-radius: 100px;
+    padding: 17px 32px;
+    width: 137px;
+    height: 52px;
+    background-color: #FD9222;
+    border: none;
+    transition: color 300ms linear, background-color 300ms linear;
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    color: #FD9222;
+    background-color: #FCF1E0;
+}
+
 
 /**=========================================  */
 /**================ Modal =================  */
@@ -855,17 +968,17 @@ img {
 }
 
 .modal-textarea::placeholder {
-font-size: 18px;
-letter-spacing: -0.02em;
-color: rgba(64, 64, 64, 0.3);
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
 }
 
 .check-text {
-font-size: 14px;
-letter-spacing: -0.02em;
-color: rgba(64, 64, 64, 0.6);
-display: flex;
-align-items: center;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.6);
+    display: flex;
+    align-items: center;
 }
 
 .check-text a {
@@ -873,7 +986,6 @@ align-items: center;
 }
 
 .check-text-box {
-    display: block;
     width: 20px;
     height: 20px;
     border-radius: 6px;
@@ -885,7 +997,7 @@ align-items: center;
     fill: transparent;
 }
 
-.modal-check:checked + .check-text .check-text-box {
+.modal-check:checked+.check-text .check-text-box {
     background-color: #FD9222;
     border: none;
     fill: #FFFFFF;
