@@ -182,6 +182,15 @@ img {
     border-radius: 30px;
 }
 
+@media (min-device-pixel-ratio:2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-container {
+        background: rgba(17, 17, 17, 0.6);
+        background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/bg_main-mob-2x.jpg);
+    }
+}
+
 .hero-title {
     font-weight: 500;
     font-size: 20px;
@@ -481,7 +490,7 @@ img {
     background-color: #FFFFFF;
     padding: 32px 20px;
     text-align: center;
-        width: 100%;
+    width: 100%;
 }
 
 .products-img {
@@ -1050,7 +1059,16 @@ img {
 
     .hero-container {
         background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/bg_main-tab.jpg);
-        padding: 670px 40px 40px 40px; 
+        padding: 670px 40px 40px 40px;
+    }
+
+    @media (min-device-pixel-ratio:2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-container {
+            background: rgba(17, 17, 17, 0.6);
+            background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/bg_main-tab-2x.jpg);
+        }
     }
 
     .hero-title {
@@ -1088,7 +1106,7 @@ img {
     /* ============== */
 
     .taste {
-        padding-top: 100px;       
+        padding-top: 100px;
     }
 
     .taste-list {
@@ -1102,6 +1120,7 @@ img {
     .taste-item:not(:nth-child(-n+4)) {
         display: block;
     }
+
     /* ============== */
 
     .made {
@@ -1115,6 +1134,7 @@ img {
     .made-subtitle {
         margin-bottom: 28px;
     }
+
     /* ============== */
     .products {
         padding-top: 100px;
@@ -1131,7 +1151,9 @@ img {
 /* ? /////////////////////////////////////// */
 
 @media screen and (min-width: 1200px) {
-    .container, .made .container {
+
+    .container,
+    .made .container {
         max-width: 1166px;
     }
 
@@ -1144,6 +1166,15 @@ img {
     .hero-container {
         background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/bg_main.jpg);
         padding: 380px 40px 40px 40px;
+    }
+
+    @media (min-device-pixel-ratio:2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-container {
+            background: rgba(17, 17, 17, 0.6);
+            background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/bg_main-2x.jpg);
+        }
     }
 
     /* ============== */
@@ -1161,47 +1192,48 @@ img {
         display: block;
     }
 
-/* ============== */
+    /* ============== */
 
-.taste {
-    padding-top: 120px;
-}
+    .taste {
+        padding-top: 120px;
+    }
 
-.taste-list {
-    gap: 24px 32px;
-}
+    .taste-list {
+        gap: 24px 32px;
+    }
 
-.taste-item {
-    width: calc((100% - 32px * 3) / 4);
-}
+    .taste-item {
+        width: calc((100% - 32px * 3) / 4);
+    }
 
-/* ============== */
+    /* ============== */
 
-.made {
-    padding-top: 120px;
-}
+    .made {
+        padding-top: 120px;
+    }
 
-.made-wrap {
-    flex-wrap: nowrap;
-}
+    .made-wrap {
+        flex-wrap: nowrap;
+    }
 
-.made-item {
-    margin-bottom: 24px;
-}
-/* ============== */
+    .made-item {
+        margin-bottom: 24px;
+    }
 
-.products {
-    padding-top: 120px;
-}
+    /* ============== */
 
-.products-list {
-    gap: 24px 18px;
-}
+    .products {
+        padding-top: 120px;
+    }
 
-.products-item {
-width: calc((100% - 18px * 3) / 4);
-}
+    .products-list {
+        gap: 24px 18px;
+    }
 
-/* ============== */
+    .products-item {
+        width: calc((100% - 18px * 3) / 4);
+    }
+
+    /* ============== */
 
 }
