@@ -174,17 +174,17 @@ img {
 
 .hero-container {
     background: rgba(17, 17, 17, 0.6);
-    background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/bg_main_chocolate.jpg);
+    background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/bg_main-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 380px 40px 40px 40px;
+    padding: 395px 20px 20px 20px;
     border-radius: 30px;
 }
 
 .hero-title {
     font-weight: 500;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 1.21;
     letter-spacing: -0.03em;
     color: #FFFFFF;
@@ -195,6 +195,8 @@ img {
 .hero-buttons {
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
+    row-gap: 32px;
 }
 
 .hero-bye-btn {
@@ -205,7 +207,7 @@ img {
     cursor: pointer;
     background-color: #FD9222;
     border-radius: 100px;
-    padding: 14px 40px;
+    padding: 12px 28px;
     border: none;
     margin-right: 14px;
     transition: color 300ms linear, background-color 300ms linear;
@@ -223,7 +225,7 @@ img {
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
     border-radius: 100px;
-    padding: 14px 40px;
+    padding: 12px 28px;
     transition: color 300ms linear, border-color 300ms linear;
 }
 
@@ -239,7 +241,6 @@ img {
     line-height: 1.29;
     letter-spacing: -0.03em;
     color: #FFFFFF;
-    margin-left: auto;
     display: flex;
     align-items: center;
     gap: 14px;
@@ -1043,6 +1044,33 @@ img {
 
     /* ============ */
 
+    .hero {
+        padding-bottom: 40px;
+    }
+
+    .hero-container {
+        background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/bg_main-tab.jpg);
+        padding: 670px 40px 40px 40px; 
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-bye-btn {
+        padding: 14px 40px;
+    }
+
+    .hero-anchor-btn {
+        padding: 14px 40px;
+    }
+
+    .hero-bottom-btn {
+        margin-left: auto;
+    }
+
+    /* ============ */
+
     .features {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -1105,6 +1133,17 @@ img {
 @media screen and (min-width: 1200px) {
     .container, .made .container {
         max-width: 1166px;
+    }
+
+    /* ============== */
+
+    .hero {
+        padding-bottom: 80px;
+    }
+
+    .hero-container {
+        background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/bg_main.jpg);
+        padding: 380px 40px 40px 40px;
     }
 
     /* ============== */
