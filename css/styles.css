@@ -81,6 +81,7 @@ img {
 .header-container {
     display: flex;
     gap: 90px;
+    align-items: center;
 }
 
 .header-logo {
@@ -88,8 +89,8 @@ img {
     align-items: center;
     gap: 4px;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 1.11;
+    font-size: 14px;
+    line-height: 1.29;
     letter-spacing: -0.03em;
     color: #111111;
 }
@@ -191,9 +192,10 @@ img {
     flex-direction: column;
     justify-content: space-between;
     overflow: auto;
-    /* opacity: 0;
+
+    opacity: 0;
     visibility: hidden;
-    pointer-events: auto; */
+    pointer-events: auto;
 }
 
 .menu-close-btn {
@@ -229,7 +231,7 @@ img {
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: #FFFFFF;
-    transition: color 300ms ease;
+    transition: color 300ms linear;
 }
 
 .mob-menu-link:hover, 
@@ -1154,6 +1156,27 @@ img {
 
     /* ============ */
 
+    .header-container {
+        gap: 28px;
+    }
+
+    
+.menu-open-btn {
+    display: none;
+}
+
+.header-menu {
+    display: flex;
+}
+
+.header-soc {
+    display: flex;
+}
+
+
+
+    /* ============ */
+
     .hero {
         padding-bottom: 40px;
     }
@@ -1277,6 +1300,14 @@ img {
             background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/bg_main-2x.jpg);
         }
     }
+
+    /* ============== */
+    .header-logo {
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+    }
+
 
     /* ============== */
 
