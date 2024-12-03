@@ -191,9 +191,9 @@ img {
     flex-direction: column;
     justify-content: space-between;
     overflow: auto;
-    opacity: 0;
+    /* opacity: 0;
     visibility: hidden;
-    pointer-events: auto;
+    pointer-events: auto; */
 }
 
 .menu-close-btn {
@@ -229,9 +229,13 @@ img {
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+    transition: color 300ms ease;
 }
 
-.link {}
+.mob-menu-link:hover, 
+.mob-menu-link:focus {
+    color: #FD9222;
+}
 
 .mob-soc {
     display: flex;
