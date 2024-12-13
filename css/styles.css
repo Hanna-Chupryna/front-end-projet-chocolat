@@ -975,25 +975,26 @@ img {
 }
 
 .modal {
-  width: 517px;
-  min-height: 794px;
+  width: 311px;
+  min-height: 622px;
   border-radius: 15px;
   background-color: #fafafa;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 40px;
+  padding: 32px 24px;
+  
 }
 
 .modal-btn {
   background-color: transparent;
   border: none;
   position: absolute;
-  top: 24px;
-  right: 24px;
-  width: 28px;
-  height: 28px;
+  top: 14px;
+  right: 14px;
+  width: 24px;
+  height: 24px;
   padding: 0;
 }
 
@@ -1004,24 +1005,24 @@ img {
 
 .modal-title {
   text-align: left;
-  max-width: 298px;
-  margin-bottom: 40px;
+  max-width: 255px;
+  margin-bottom: 32px;
 }
 
 .modal-field {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .modal-input {
   width: 100%;
-  height: 68px;
+  height: 45px;
   border-radius: 13px;
   border: 1px solid rgba(17, 17, 17, 0.3);
   background-color: transparent;
-  padding-left: 62px;
-  padding-right: 24px;
+  padding-left: 42px;
+  padding-right: 18px;
   color: #111111;
-  font-size: 16px;
+  font-size: 14px;
   outline: transparent;
   transition: border-color 300ms linear;
 }
@@ -1042,12 +1043,12 @@ img {
 } */
 
 .modal-input::placeholder {
-  font-size: 12px;
+  font-size: 14px;
   color: rgba(64, 64, 64, 0.3);
 }
 
 .modal-form-btn {
-  padding: 14px 40px;
+  padding: 12px 28px;
 
   font-family: inherit;
   font-weight: 600;
@@ -1065,17 +1066,17 @@ img {
 
 .modal-label {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.5);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .modal-icon {
   position: absolute;
   fill: transparent;
   stroke: #404040;
-  left: 24px;
+  left: 18px;
   top: 50%;
   transform: translateY(-50%);
   transition: stroke 300ms linear;
@@ -1083,26 +1084,27 @@ img {
 
 .modal-textarea {
   width: 100%;
-  height: 137px;
+  height: 91px;
   border-radius: 13px;
   border: 1px solid rgba(17, 17, 17, 0.3);
   background-color: transparent;
-  padding: 22px 24px;
+  padding: 14px 18px;
   color: #111111;
-  font-size: 16px;
+  font-size: 14px;
   outline: transparent;
   transition: border-color 300ms linear;
   resize: none;
 }
 
 .modal-textarea::placeholder {
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
 
 .check-text {
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 1.33;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.6);
   display: flex;
@@ -1382,6 +1384,68 @@ img {
   padding: 14px 28px;
     width: 128px;
     height: 45px;
+}
+  /* ============== */
+
+.modal {
+   width: 517px;
+  min-height: 794px;
+padding: 40px;
+}
+
+.modal-btn {
+  top: 24px;
+  right: 24px;
+  width: 28px;
+  height: 28px;
+}
+
+.modal-title {
+  max-width: 298px;
+  margin-bottom: 40px;
+}
+
+.modal-field {
+  margin-bottom: 18px;
+}
+
+.modal-input {
+  height: 68px;
+  padding-left: 62px;
+  padding-right: 24px;
+  font-size: 16px;
+}
+
+.modal-input::placeholder {
+  font-size: 12px;
+}
+
+.modal-form-btn {
+  padding: 14px 40px;
+}
+
+.modal-label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.modal-icon {
+  left: 24px;
+}
+
+.modal-textarea {
+  height: 137px;
+  padding: 22px 24px;
+  font-size: 16px;
+}
+
+.modal-textarea::placeholder {
+  font-size: 18px;
+}
+
+.check-text {
+  font-size: 14px;
+  letter-spacing: -0.02em;
 }
 
   /* ============== */
