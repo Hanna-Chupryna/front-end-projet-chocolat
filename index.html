@@ -627,13 +627,6 @@
                     "
                     media="(min-width: 768px)"
                   />
-                  <source
-                    srcset="
-                      ./images/sellers-img-2-mob.jpg    1x,
-                      ./images/sellers-img-2-mob-2x.jpg 2x
-                    "
-                    media="(max-width: 767px)"
-                  />
                   <img
                     class="sellers-img"
                     src="./images/sellers-img-2.jpg"
@@ -663,21 +656,7 @@
                     "
                     media="(min-width: 1166px)"
                   />
-                  <source
-                    srcset="
-                      ./images/sellers-img-3-tab.jpg    1x,
-                      ./images/sellers-img-3-tab-2x.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/sellers-img-3-mob.jpg    1x,
-                      ./images/sellers-img-3-mob-2x.jpg 2x
-                    "
-                    media="(max-width: 767px)"
-                  />
-                  <img
+                <img
                     class="sellers-img"
                     src="./images/sellers-img-3.jpg"
                     alt="Dark chocolate"
@@ -922,7 +901,7 @@
                     </div>
                 </div>
 
-                <div class="modal-field">
+                <div class="modal-field-textarea">
                     <label for="user-text" class="modal-label">Comment</label>
                     <textarea 
                     name="user-text"
@@ -931,14 +910,14 @@
                     placeholder="Enter text"></textarea>
                 </div>
 
-                <div class="modal-field">
+                <div class="modal-field-last">
                     <input class="modal-check visually-hidden" type="checkbox" name="terms" id="terms" required>
                     <label class="check-text" for="terms">
                         <span class="check-text-box">
                             <svg class="check-text-icon" width="10" height="10">
                                 <use href="./images/icons.svg#icon-icon-4"></use>
                             </svg>
-                        </span>I accept the terms and conditions of the&nbsp;<a href="">Privacy Policy</a>
+                        </span><span>I accept the terms and conditions of&nbsp;the&ensp;<a href="">Privacy Policy</a></span>
                     </label>
                 </div>
 
