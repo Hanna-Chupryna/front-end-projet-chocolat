@@ -192,12 +192,21 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: auto;
+  overflow: auto; 
 
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
+  transition: opacity 300ms linear, visibility 300ms linear;
+}
+
+.mob-menu.is-open {
+  opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
+
+
 
 .menu-close-btn {
   display: flex;
@@ -222,7 +231,7 @@ img {
   margin-bottom: 50px;
 }
 
-.mob-menu-item {
+.mob-menu-item:not(:last-child) {
   margin-bottom: 24px;
 }
 
@@ -1407,7 +1416,7 @@ img {
   }
 
   .modal-title {
-    max-width: 298px;
+    max-width: 315px;
     margin-bottom: 40px;
   }
 
